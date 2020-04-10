@@ -40,13 +40,24 @@ Demonstrate your understanding of this Sprint's concepts by answering the follow
 
 - [ ] Mention two parts of Express that you learned about this week.
 
+I learned that Express sits on top of an http server with Node.js and adds functions for routing and middleware. 
+Express is a Node.js module and its middleware stack is an array of functions. Developers can make more decisions due to the flexibility and control of Express.
+
 - [ ] Describe Middleware?
+
+Middleware is an array of functions that get executed in the order they are introduced into the server. Most of the javascript we are learning as well as route handlers are middleware. Middleware functions can get request and response objects, perform operations on them, and trigger new actions. Examples include logging and security. Middleware can also change requests and responses. 
 
 - [ ] Describe a Resource?
 
+Anything can be a resource. Every entity that can be identified, named, addressed or handled is a resource. Resources can be made accessible through a unique URI (Universal Resource Identifier). Resource management on the web happens via HTTP methods.
+
 - [ ] What can the API return to help clients know if a request was successful?
 
+For successful PUT operations, the API can return HTTP Status Code 200 (OK). We return HTTP status code 201 (created) for successful POST operations.
+
 - [ ] How can we partition our application into sub-applications?
+
+Express Routers are a way to split an application into sub-applications to make it more modular and easier to maintain. Routers reorganize code for readability, using separate pieces that can later be composed together.
 
 ## Minimum Viable Product
 
